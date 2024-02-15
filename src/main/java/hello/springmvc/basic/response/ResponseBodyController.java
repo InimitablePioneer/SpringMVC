@@ -55,5 +55,13 @@ public class ResponseBodyController {
         return helloData;
     }
 
+    //for my test
+    @GetMapping("/response-body-json-test")
+    public HelloData responseBodyJsonTest() {
+        HelloData helloData = new HelloData();
+        helloData.setUsername("SIDO");
+        helloData.setAge(33);
+        return helloData;
+    }
 
 }
